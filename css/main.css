@@ -442,6 +442,7 @@ nav li {
   border: 0.3rem solid #949494;
   padding: 1rem;
 }
+
 .summary-header {
   display: flex;
   justify-content: space-between;
@@ -503,9 +504,6 @@ form {
   .address-box .form-group:first-child {
     grid-column: 1 / -1;
   }
-  .order-table {
-    border: 1px solid #000000;
-  }
   .order-summary {
     display: none;
   }
@@ -513,6 +511,7 @@ form {
     display: block;
   }
   .table-row {
+    border-collapse: collapse;
     width: 100%;
   }
   th {
@@ -522,10 +521,73 @@ form {
     border: #000000 1px solid;
     padding: 0.5rem;
   }
+
+}
+/* Admin-Product */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: black;
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.administration-header h1 {
+  color: #ffffff;
+}
+.administration-header {
+  background:rgb(0, 0, 0);
+  padding: 1rem;
+  padding-left: 2rem;
+}
+.main-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main-row h2 {
+  margin: 0;
+  padding-left: 1rem;
+}
+.new-product {
+  display: block;
+  padding: 1rem;
+}
+.admin-prod {
+  display: flex;
+  align-items: stretch;
+}
+.sidebar {
+  background-color:  #949494;
+  padding-left: 2rem;
+  width: 200px;
+  min-height: 100vh;
+}
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+.product-row {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-prod td:last-child {
+  gap: 0.5rem;
+  text-align: center;
+}
+.admin-prod td svg {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(0, 68, 255);
 }
 
-
-
+.admin-prod td a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Shopping accordion */
 .accordion {
